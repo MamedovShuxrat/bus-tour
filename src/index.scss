@@ -1,0 +1,57 @@
+@import './assets/styles/variables.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+  color: inherit;
+  border: none;
+
+}
+
+body {
+  font-family: $main-fonts;
+  font-size: 18px;
+  color: $main-dark;
+  line-height: 22px;
+}
+
+.container {
+  width: 1366px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid;
+
+}

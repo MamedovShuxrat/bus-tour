@@ -1,0 +1,26 @@
+@import '../../assets/styles/variables.scss';
+
+.container-position {
+    position: relative;
+}
+
+.header {
+    padding: 28px 100px 28px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__lists {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}

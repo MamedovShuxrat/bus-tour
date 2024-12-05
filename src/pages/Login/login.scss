@@ -1,0 +1,183 @@
+@import '../../assets/styles/variables.scss';
+
+.login {
+    background: url('../../assets/images/login-bg.png') center/cover no-repeat;
+    width: 100%;
+    height: 768px;
+
+    &-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__btn {
+        padding: 18px;
+        border-radius: 20px;
+
+        background: rgb(113, 136, 187);
+
+        color: rgb(255, 255, 255);
+        font-family: $second-fonts;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+        cursor: pointer;
+
+        &-again {
+            background: rgb(188, 199, 223);
+        }
+
+        &-width {
+            width: 343px;
+        }
+    }
+
+    &__form {
+        margin-bottom: 140px;
+    }
+
+    &__title {
+        color: rgb(124, 124, 156);
+        font-family: $second-fonts;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    &__wrapper {
+        border-radius: 20px;
+
+        background: rgb(255, 255, 255);
+
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding: 58px 122px 48px;
+
+            input {
+                padding: 12px 33px;
+                border-radius: 20px;
+                border: 1px solid rgb(246, 246, 249);
+
+                background: rgb(246, 246, 249);
+                color: rgba(124, 124, 156, 0.5);
+                font-family: $second-fonts;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                outline: none;
+                transition: border ease-in-out .3s;
+
+                &:focus {
+                    border: 1px solid rgb(113, 136, 187);
+
+                }
+            }
+
+            &-position {
+                position: relative;
+            }
+
+            &__close {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+        }
+    }
+
+    &__confirm {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: 58px 122px 48px;
+
+        &_wrapper {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            input {
+                width: 45px;
+                height: 58px;
+                outline: none;
+                padding: 5px;
+                font-family: $second-fonts;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                border-radius: 20px;
+
+                background: rgb(246, 246, 249);
+            }
+        }
+
+    }
+
+    &__options {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: rgb(236, 236, 240);
+        border-radius: 20px;
+
+    }
+
+    &__options_btn {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 28px 0;
+        border-radius: 20px;
+
+        background: rgb(236, 236, 240);
+        color: rgb(124, 124, 156);
+        font-family: $second-fonts;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+        cursor: pointer;
+
+        transition: background ease-in-out .3s, color ease-in .3s;
+
+        &.active {
+            border-radius: 20px;
+
+            background: rgb(113, 136, 187);
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    &__forgot {
+        color: rgb(65, 65, 85);
+        font-family: $second-fonts;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    &__desc {
+        color: rgb(185, 185, 202);
+        font-family: $second-fonts;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        text-align: left;
+        width: 343px;
+        margin-bottom: 24px;
+    }
+
+
+}
