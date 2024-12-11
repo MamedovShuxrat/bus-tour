@@ -1,4 +1,6 @@
 @import '../../assets/styles/variables.scss';
+$title-animation-duration: 0.5s; // Длительность анимации
+$title-animation-delay: 0.2s; // Задержка между анимациями
 
 .main {
     display: flex;
@@ -9,7 +11,9 @@
 
     &__content {
         width: 446px;
-        background: rgb(177, 193, 229);
+        height: 768px;
+        background: url('../../assets/images/bg-half.png') center/cover no-repeat;
+
     }
 
     &__visual {
@@ -24,12 +28,55 @@
         font-size: 40px;
         font-weight: 400;
         line-height: 49px;
-        text-transform: uppercase;
-        padding: 260px 76px 260px 46px;
+        padding: 351px 30px 177px 30px;
         animation: visibleTitle 1s forwards;
 
         &.hidden {
             animation: hiddenTitle 1s forwards;
+        }
+
+        .word {
+
+            &::first-letter {
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            font-weight: 600;
+            font-size: 60px;
+
+            line-height: 1.33333;
+            color: #fff;
+
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideWord $title-animation-duration forwards;
+
+            &:nth-child(1) {
+                animation-delay: 0s;
+            }
+
+            &:nth-child(2) {
+                animation-delay: $title-animation-delay;
+                margin-left: 10px;
+            }
+
+            &:nth-child(3) {
+                animation-delay: $title-animation-delay * 2;
+                margin-left: 15px;
+            }
+        }
+
+        @keyframes slideWord {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px); // Начальная позиция
+            }
+
+            100% {
+                opacity: 1; // Конечная прозрачность
+                transform: translateX(0); // Конечная позиция
+            }
         }
     }
 
@@ -41,11 +88,12 @@
         padding: 12px 32px;
         border-radius: 8px;
 
-        background: rgb(113, 136, 187);
+        background: #FF5E56;
         color: rgb(255, 255, 255);
         font-family: $main-fonts;
-        font-size: 30px;
-        font-weight: 500;
+        font-weight: 700;
+        font-size: 32px;
+        color: #fff;
         line-height: normal;
         width: auto;
         cursor: pointer;
@@ -63,44 +111,51 @@
         }
     }
 
+    &__people {
+        position: absolute;
+        bottom: 230px;
+        left: 60px;
+        animation: visibleTitle 1s forwards;
+    }
+}
 
-    @keyframes slideIn {
-        0% {
-            right: 1000px;
-        }
 
-        100% {
-            right: 245px;
-        }
+@keyframes slideIn {
+    0% {
+        right: 1000px;
     }
 
-    @keyframes slideOut {
-        0% {
-            right: 245px;
-        }
+    100% {
+        right: 245px;
+    }
+}
 
-        100% {
-            right: -1100px;
-        }
+@keyframes slideOut {
+    0% {
+        right: 245px;
     }
 
-    @keyframes visibleTitle {
-        0% {
-            opacity: 0;
-        }
+    100% {
+        right: -1100px;
+    }
+}
 
-        100% {
-            opacity: 1;
-        }
+@keyframes visibleTitle {
+    0% {
+        opacity: 0;
     }
 
-    @keyframes hiddenTitle {
-        0% {
-            opacity: 1;
-        }
+    100% {
+        opacity: 1;
+    }
+}
 
-        100% {
-            opacity: 0;
-        }
+@keyframes hiddenTitle {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

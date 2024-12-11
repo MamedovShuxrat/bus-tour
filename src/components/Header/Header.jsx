@@ -12,13 +12,13 @@ const Header = () => {
                         <img width={277} height={49} src={logo} alt="logo" />
                     </Link>
                     <div className="nav__lists">
-                        <Link to="/notifications">
+                        <Link className="nav__link" to="/notifications">
                             Уведомления
                         </Link>
-                        <Link to="/partners">
+                        <Link className="nav__link" to="/partners">
                             Стать партнером
                         </Link>
-                        <Link to="/login">
+                        <Link className="nav__link" to="/login">
                             Войти
                         </Link>
                     </div>
