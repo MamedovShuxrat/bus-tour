@@ -22,8 +22,8 @@
     src: url("/src/assets/fonts/montserrat-v25-cyrillic_latin-600.woff2") format("woff2");
 }
 
-$main-fonts: 'Inter';
-$second-fonts: 'Montserrat';
+$main-fonts: 'Inter', sans-serif;
+$second-fonts: 'Montserrat', sans-serif;
 
 $main-dark: #000000;
 $main-white: #FFFFFF;
