@@ -28,6 +28,7 @@
         border-radius: 13px;
         background: rgb(255, 255, 255);
         padding: 20px;
+        display: flex;
 
         &-1 {
             grid-row: span 2 / span 2;
@@ -36,6 +37,17 @@
         &-2 {
             grid-row: span 2 / span 2;
             grid-column: span 2 / span 2;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: -30px;
+                right: 30px;
+                content: '';
+                width: 357px;
+                height: 100%;
+                background: url('../../assets/images/numbers/map.png') center/contain no-repeat;
+            }
         }
 
         &-3 {
@@ -61,6 +73,8 @@
     }
 
     &__wrapper {
+        margin-top: auto;
+
         p {
             color: rgb(23, 23, 23);
             font-family: $main-fonts;

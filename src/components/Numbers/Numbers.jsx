@@ -17,7 +17,13 @@ const Numbers = () => {
                                     отзыва</span>
                             </div>
                         </div>
-                        <div className="numbers__card numbers__card-2">2</div>
+                        <div className="numbers__card numbers__card-2">
+                            <div className="numbers__wrapper">
+                                <p>924000</p>
+                                <span>Общее расстояние
+                                    в километрах</span>
+                            </div>
+                        </div>
                         <div className="numbers__card numbers__card-3">
                             <div className="numbers__wrapper">
                                 <p>1509</p>
@@ -30,7 +36,6 @@ const Numbers = () => {
                                 <span> Перевезенных
                                     крокодилов</span>
                             </div>
-
                         </div>
                     </div>
 

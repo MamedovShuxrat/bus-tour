@@ -6,6 +6,7 @@ import Notification from '../Notification/Notification'
 
 const Header = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const [notificationVisible, setNotificationVisible] = useState(false)
     const [notificationCount, setNotificationCount] = useState(0);
 
     const handleNotificationCount = (count) => {
@@ -25,7 +26,7 @@ const Header = () => {
                     </Link>
                     <div className="nav__lists">
                         <div className="nav__link nav__link-notification">
-                            <span className='notification-count'>{notificationCount}</span>
+                            {notificationVisible && <span className='notification-count'>{notificationCount}</span>}
                             <div onClick={toggleNotification} >
                                 Уведомления
                             </div>

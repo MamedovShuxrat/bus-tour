@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import starIcon from '../../assets/icons/bus-card/star.svg'
 import favoriteIcon from '../../assets/icons/bus-card/bookmark.svg'
+import favoriteActiveIcon from '../../assets/icons/bus-card/bookmark-active.svg'
 import './busCard.scss'
 
 const BusCard = ({ bus }) => {
+    const [isFavorite, setIsFavorite] = useState(true)
+    const handleFavoriteToggle = () => {
+        setIsFavorite(!isFavorite)
+    }
     return (
         <div className="bus-card">
             <div className="bus-card__image">
@@ -16,8 +21,8 @@ const BusCard = ({ bus }) => {
                         <img src={starIcon} />
                         <span>{bus.rating}</span>
                     </div>
-                    <button className="bus-card__favorite">
-                        <img src={favoriteIcon} alt="favorite" />
+                    <button className="bus-card__favorite" onClick={handleFavoriteToggle}>
+                        <img width={12} height={16} src={isFavorite ? favoriteIcon : favoriteActiveIcon} alt="favorite" />
                     </button>
                 </div>
                 <div className="bus-card__amenities">

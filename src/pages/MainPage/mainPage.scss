@@ -6,7 +6,6 @@
 
     &__top_wrapper {
         background: rgb(222, 241, 250);
-        height: 313px;
         padding: 85px 0;
     }
 
@@ -19,8 +18,8 @@
         font-size: 22px;
         font-weight: 400;
         line-height: 27px;
-        margin-left: 100px;
-        margin-bottom: 16px;
+        margin: 0 0 16px 20px;
+
     }
 
     &__list {
@@ -33,6 +32,7 @@
     &__more {
         margin-top: 15px;
         text-align: center;
+        cursor: pointer;
 
         img {
             margin: 0 auto;
