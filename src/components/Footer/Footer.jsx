@@ -36,7 +36,7 @@ const Footer = () => {
 							<a href="#" className="footer__link">Присоединиться к нам</a>
 							<a href="#" className="footer__link">Документация для партнеров</a>
 						</div>
-						<div className="footer__item">
+						<div className="footer__item footer__item-social">
 							<p className="footer__item-title">Мы в соцсетях</p>
 							<a href="#" className="footer__link footer__link-social">
 								<img src={vk} alt="social icon" />

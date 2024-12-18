@@ -34,7 +34,7 @@ const BusCard = ({ bus }) => {
                     ))}
                 </div>
                 <div className="bus-card__price">
-                    <span>{bus.price}</span>
+                    <p>{bus.price}</p>
                     <button className="bus-card__book">Забронировать</button>
                 </div>
             </div>
