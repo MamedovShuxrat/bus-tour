@@ -1,0 +1,80 @@
+@import '../../assets/styles/variables.scss';
+
+.filter-date {
+    &__inner {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    &__item {
+        padding: 10px 90px;
+        border-radius: 12px;
+        width: 375px;
+
+        background: rgb(255, 255, 255);
+        position: relative;
+        min-height: 60px;
+    }
+
+    &__name {
+        color: rgb(98, 98, 98);
+        font-family: $main-fonts;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        text-align: left;
+        margin-bottom: 4px;
+    }
+
+    &__modal {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+    }
+
+    &__select {
+        color: rgb(23, 23, 23);
+        font-family: $main-fonts;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    &__visual {
+        align-self: center;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    &__btn {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+
+        border-radius: 12px;
+        background: rgb(255, 94, 86);
+        padding: 10px 90px;
+        min-height: 60px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 375px;
+        cursor: pointer;
+    }
+}

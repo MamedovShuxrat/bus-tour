@@ -5,7 +5,7 @@
 }
 
 .header {
-    padding: 28px 100px 28px;
+    padding: 17px 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -25,8 +25,35 @@
     }
 
     &__link {
-        font-weight: 400;
+        color: rgb(23, 23, 23);
+        font-family: Inter;
         font-size: 20px;
-        color: #fff;
+        font-weight: 500;
+        line-height: 24px;
+
+        &-notification {
+            position: relative;
+            cursor: pointer;
+
+            .notification-count {
+                position: absolute;
+                top: -15px;
+                right: -10px;
+                border: 2px solid rgb(255, 94, 86);
+                background: rgb(255, 94, 86);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 21px;
+                height: 21px;
+                border-radius: 50%;
+
+                color: rgb(255, 255, 255);
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 15px;
+            }
+        }
+
     }
 }

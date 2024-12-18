@@ -1,0 +1,80 @@
+@import '../../assets/styles/variables.scss';
+
+.numbers {
+    background: rgb(222, 241, 250);
+
+    &__inner {
+        padding: 36px 100px 64px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 32px;
+        color: rgb(23, 23, 23);
+        font-family: $main-fonts;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    &__card {
+        border-radius: 13px;
+        background: rgb(255, 255, 255);
+        padding: 20px;
+
+        &-1 {
+            grid-row: span 2 / span 2;
+        }
+
+        &-2 {
+            grid-row: span 2 / span 2;
+            grid-column: span 2 / span 2;
+        }
+
+        &-3 {
+            grid-column-start: 4;
+        }
+
+        &-4 {
+            grid-column-start: 4;
+            grid-row-start: 2;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: 33px;
+                right: 0;
+                content: '';
+                width: 77px;
+                height: 55px;
+                background: url('../../assets/images/numbers/gena.png') center/cover no-repeat;
+            }
+        }
+
+    }
+
+    &__wrapper {
+        p {
+            color: rgb(23, 23, 23);
+            font-family: $main-fonts;
+            font-size: 72px;
+            font-weight: 500;
+            line-height: 87px;
+        }
+
+        span {
+            color: rgb(98, 98, 98);
+            font-family: $main-fonts;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+}

@@ -1,0 +1,161 @@
+@import '../../assets/styles/variables.scss';
+$title-animation-duration: 0.5s; // Длительность анимации
+$title-animation-delay: 0.2s; // Задержка между анимациями
+
+.wellcome {
+    display: flex;
+    background: url('../../assets/images/bg-test.png') center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+
+
+    &__content {
+        width: 446px;
+        height: 768px;
+        background: url('../../assets/images/bg-half.png') center/cover no-repeat;
+
+    }
+
+    &__visual {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: $second-fonts;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 49px;
+        padding: 351px 30px 177px 30px;
+        animation: visibleTitle 1s forwards;
+
+        &.hidden {
+            animation: hiddenTitle 1s forwards;
+        }
+
+        .word {
+
+            &::first-letter {
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            font-weight: 600;
+            font-size: 60px;
+
+            line-height: 1.33333;
+            color: #fff;
+
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideWord $title-animation-duration forwards;
+
+            &:nth-child(1) {
+                animation-delay: 0s;
+            }
+
+            &:nth-child(2) {
+                animation-delay: $title-animation-delay;
+                margin-left: 10px;
+            }
+
+            &:nth-child(3) {
+                animation-delay: $title-animation-delay * 2;
+                margin-left: 15px;
+            }
+        }
+
+        @keyframes slideWord {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px); // Начальная позиция
+            }
+
+            100% {
+                opacity: 1; // Конечная прозрачность
+                transform: translateX(0); // Конечная позиция
+            }
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        position: absolute;
+        bottom: 60px;
+        right: 60px;
+        padding: 12px 32px;
+        border-radius: 8px;
+
+        background: #FF5E56;
+        color: rgb(255, 255, 255);
+        font-family: $main-fonts;
+        font-weight: 700;
+        font-size: 32px;
+        color: #fff;
+        line-height: normal;
+        width: auto;
+        cursor: pointer;
+    }
+
+    &__img {
+        position: absolute;
+        right: 1000px;
+        bottom: 155px;
+        animation: slideIn 1s forwards;
+
+        &.imgSlideOut {
+            animation: slideOut 1s forwards;
+
+        }
+    }
+
+    &__people {
+        position: absolute;
+        bottom: 230px;
+        left: 60px;
+        animation: visibleTitle 1s forwards;
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+        right: 1000px;
+    }
+
+    100% {
+        right: 245px;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        right: 245px;
+    }
+
+    100% {
+        right: -1100px;
+    }
+}
+
+@keyframes visibleTitle {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hiddenTitle {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

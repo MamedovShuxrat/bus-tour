@@ -1,0 +1,159 @@
+@import '../../assets/styles/variables.scss';
+
+.card {
+    border-radius: 12px;
+    width: 25%;
+    border-radius: 12px;
+
+    box-shadow: 0px 2.16px 14.43px 0px rgba(29, 58, 83, 0.08);
+    background: rgb(255, 255, 255);
+
+    &__visual {
+        border-radius: 12px 12px 0px 0px;
+        height: 231px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 2px;
+    }
+
+    &__desc {
+        padding: 3px 7px;
+        border-radius: 4px;
+        font-family: $main-fonts;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 10.42px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+
+        &-grade {
+            background: rgb(255, 94, 86);
+        }
+
+        &-hours {
+            background: rgb(23, 23, 23);
+        }
+    }
+
+    &__adress {
+        margin-top: auto;
+
+        &-link {
+            display: inline-flex;
+            padding: 3px 7px;
+            border-radius: 4px;
+
+            background: rgb(255, 255, 255);
+
+            span {
+                margin-left: 5px;
+                color: rgb(23, 23, 23);
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 11.55px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__content {
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        min-height: 250px;
+
+    }
+
+    &__space {
+        display: inline-flex;
+        border-radius: 4px;
+        background: rgb(23, 23, 23);
+        padding: 3px 7px;
+        color: rgb(255, 255, 255);
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 9.81px;
+        text-align: center;
+        gap: 7px;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        color: rgb(23, 23, 23);
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15.33px;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        color: rgb(98, 98, 98);
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14.43px;
+        margin-bottom: 10px;
+    }
+
+    &__tabs {
+        margin-top: auto;
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    &__tab {
+        color: rgb(23, 23, 23);
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 9.81px;
+        text-align: center;
+        padding: 3px 7px;
+        border-radius: 4px;
+
+        background: rgb(222, 219, 219);
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__price {
+        color: rgb(255, 94, 86);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 19.64px;
+    }
+
+    &__btn {
+        padding: 6px 17px;
+        border: 1px solid rgb(255, 94, 86);
+        border-radius: 5px;
+        background: rgb(255, 94, 86);
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 14.73px;
+        letter-spacing: 0.38px;
+
+        transition: background ease-in-out .3s, color ease-in .3s, border ease-in .3s;
+
+        &:hover {
+            border: 1px solid rgb(255, 94, 86);
+            border-radius: 5px 5px 0 5px;
+            background: rgb(255, 255, 255);
+            color: rgb(255, 94, 86);
+        }
+    }
+}
+
+.cards__wrapper {
+    display: flex;
+    gap: 20px;
+}

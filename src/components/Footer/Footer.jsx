@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/icons/test-logo.svg'
 import './footer.scss'
 
@@ -13,7 +14,9 @@ const Footer = () => {
 				<div className="footer__inner">
 					<div className="footer__wrapper">
 						<div className="footer__item">
-							<img width={97} height={59} src={logo} alt="logo" />
+							<Link to="/">
+								<img width={97} height={59} src={logo} alt="logo" />
+							</Link>
 							<p className="footer__slogan">Быстро, удобно, стабильно</p>
 							<div className="footer__contacts">
 								<a href="tel:+78005553535" className="footer__contact">Телефон: + 7(800) 555-35-35</a>

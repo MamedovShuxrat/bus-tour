@@ -12,15 +12,7 @@ const Login = () => {
 
 
     const renderMain = () => (
-        <div className="login login__main login-center">
-            <a className='login__btn login__btn-width' onClick={() => setStep('login')}>Войти в аккаунт</a>
-            <a className='login__btn login__btn-width' onClick={() => setStep('register')}>Зарегистрироваться</a>
-        </div>
-    );
-
-    const renderLogin = () => (
         <div className=" login login__form login-center">
-            <div className="login__title">Авторизация</div>
             <div className="login__wrapper">
                 <div className="login__options">
                     <a className={`login__options_btn ${activeOption === 'partner' ? 'active' : ''}`}
@@ -33,8 +25,31 @@ const Login = () => {
                     </a>
                 </div>
                 <form className='form'>
-                    <input type="email" placeholder="Введите email" required />
-                    <input type="password" placeholder="Введите пароль" required />
+                    <div className=" login__main login-center login-gap">
+                        <a className='login__btn login__btn-width' onClick={() => setStep('login')}>Войти в аккаунт</a>
+                        <a className='login__btn login__btn-width' onClick={() => setStep('register')}>Зарегистрироваться</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    );
+
+    const renderLogin = () => (
+        <div className=" login login__form login-center">
+            <div className="login__title">Авторизация</div>
+            <div className="login__wrapper">
+                <form className='form'>
+                    <div className="form__fields">
+                        <label class="form__desc" for="email">Электронная почта</label>
+                        <input class="form__input" type="text" id="email" name="email"
+                            placeholder="Example@mail.ru" />
+                    </div>
+                    <div className="form__fields">
+                        <label class="form__desc" for="password">Example@mail.ru</label>
+                        <input type="password" id='password' placeholder="·················" required />
+                    </div>
                     <button className='login__btn'>Войти</button>
                     <a href="#forgot-password" className="login__forgot">Забыли пароль?</a>
                 </form>
@@ -45,13 +60,13 @@ const Login = () => {
 
 
     return (
-        <section className='container'>
-            <div className="login">
+        <div className="login">
+            <section className='container'>
                 {step === 'main' && renderMain()}
                 {step === 'login' && renderLogin()}
                 {step === 'register' && <Register />}
-            </div>
-        </section>
+            </section>
+        </div>
     );
 };
 

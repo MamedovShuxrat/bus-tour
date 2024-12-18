@@ -10,25 +10,38 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 14px;
+    }
+
+    &-gap {
+        gap: 26px;
+
     }
 
     &__btn {
         padding: 18px;
-        border-radius: 20px;
 
-        background: rgb(113, 136, 187);
+        border-radius: 12px;
+
+        background: rgb(66, 161, 226);
 
         color: rgb(255, 255, 255);
         font-family: $second-fonts;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 600;
-        line-height: 24px;
+        line-height: 29px;
         text-align: center;
         cursor: pointer;
+        width: 404px;
 
         &-again {
-            background: rgb(188, 199, 223);
+            border-radius: 12px;
+
+            background: rgb(212, 240, 255);
+            color: rgb(66, 161, 226);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+            text-align: center;
         }
 
         &-width {
@@ -36,22 +49,20 @@
         }
     }
 
-    &__form {
-        margin-bottom: 140px;
-    }
 
     &__title {
-        color: rgb(124, 124, 156);
         font-family: $second-fonts;
+        color: rgb(66, 161, 226);
         font-size: 24px;
         font-weight: 700;
         line-height: 29px;
         text-align: center;
-        margin-bottom: 34px;
+        margin-bottom: 26px;
     }
 
+
     &__wrapper {
-        border-radius: 20px;
+        border-radius: 24px;
 
         background: rgb(255, 255, 255);
 
@@ -59,20 +70,23 @@
         .form {
             display: flex;
             flex-direction: column;
-            gap: 14px;
-            padding: 58px 122px 48px;
+            gap: 26px;
+            padding: 75px 91px;
 
             input {
-                padding: 12px 33px;
-                border-radius: 20px;
+                border: 2px solid rgb(220, 220, 220);
+                border-radius: 16px;
+                padding: 17px 19px;
+                background: rgb(255, 255, 255);
                 border: 1px solid rgb(246, 246, 249);
 
-                background: rgb(246, 246, 249);
-                color: rgba(124, 124, 156, 0.5);
-                font-family: $second-fonts;
+                // color: rgba(124, 124, 156, 0.5);
+                color: rgb(58, 51, 51);
                 font-size: 20px;
-                font-weight: 600;
+                font-weight: 500;
                 line-height: 24px;
+                letter-spacing: 0%;
+                text-align: left;
                 outline: none;
                 transition: border ease-in-out .3s;
 
@@ -91,6 +105,22 @@
                 top: 15px;
                 right: 20px;
             }
+
+            &__fields {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+            }
+
+            &__desc {
+                color: rgb(126, 126, 126);
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0%;
+                text-align: left;
+                width: 404px;
+            }
         }
     }
 
@@ -103,20 +133,25 @@
         &_wrapper {
             display: flex;
             align-items: center;
+            justify-content: space-around;
             gap: 14px;
 
             input {
                 width: 45px;
                 height: 58px;
                 outline: none;
-                padding: 5px;
+                padding: 10px;
                 font-family: $second-fonts;
                 font-size: 20px;
                 font-weight: 600;
                 line-height: 24px;
-                border-radius: 20px;
+                border: none;
+                outline: none;
+                border-radius: 16px;
 
-                background: rgb(246, 246, 249);
+                /* Правильный код */
+                background: rgb(212, 240, 255);
+
             }
         }
 
@@ -126,8 +161,9 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        background: rgb(236, 236, 240);
-        border-radius: 20px;
+        border-radius: 24px;
+        background: rgb(212, 240, 255);
+
 
     }
 
@@ -137,9 +173,10 @@
         justify-content: center;
         align-items: center;
         padding: 28px 0;
-        border-radius: 20px;
+        border-radius: 24px;
 
-        background: rgb(236, 236, 240);
+        background: rgb(212, 240, 255);
+
         color: rgb(124, 124, 156);
         font-family: $second-fonts;
         font-size: 20px;
@@ -151,15 +188,15 @@
         transition: background ease-in-out .3s, color ease-in .3s;
 
         &.active {
-            border-radius: 20px;
 
-            background: rgb(113, 136, 187);
             color: rgb(255, 255, 255);
+            border-radius: 24px;
+            background: rgb(66, 161, 226);
         }
     }
 
     &__forgot {
-        color: rgb(65, 65, 85);
+        color: rgb(66, 161, 226);
         font-family: $second-fonts;
         font-size: 16px;
         font-weight: 600;
@@ -170,11 +207,9 @@
 
     &__desc {
         color: rgb(185, 185, 202);
-        font-family: $second-fonts;
         font-size: 14px;
         font-weight: 600;
         line-height: 17px;
-        text-align: left;
         width: 343px;
         margin-bottom: 24px;
     }
