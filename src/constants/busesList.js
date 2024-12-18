@@ -11,69 +11,6 @@ import microbusIcon from '/src/assets/icons/filter/microbus.svg'
 import busesIcon from '/src/assets/icons/filter/buses.svg'
 import allIcon from '/src/assets/icons/filter/all.svg'
 
-// export const buses = [
-//     {
-//         id: 1,
-//         name: "Автобус Yutong ZK6122H9",
-//         rating: 4.7,
-//         image: busImg,
-//         amenities: [
-//             { icon: seatIcon, text: "Мест: 53" },
-//             { icon: seatBeltIcon, text: "Ремни безопасности" },
-//             { icon: flashIcon, text: "Розетки" },
-//             { icon: airConIcon, text: "Кондиционер" },
-//             { icon: karaokeIcon, text: "Микрофон" },
-//             { icon: wcIcon, text: "Туалет" },
-//         ],
-//         price: "1500 ₽",
-//     },
-//     {
-//         id: 2,
-//         name: "Автобус Mercedes-Benz Sprinter",
-//         rating: 4.5,
-//         image: busImg,
-//         amenities: [
-//             { icon: seatIcon, text: "Мест: 53" },
-//             { icon: seatBeltIcon, text: "Ремни безопасности" },
-//             { icon: flashIcon, text: "Розетки" },
-//             { icon: airConIcon, text: "Кондиционер" },
-//             { icon: karaokeIcon, text: "Микрофон" },
-//             { icon: wcIcon, text: "Туалет" },
-//         ],
-//         price: "1200 ₽",
-//     },
-//     {
-//         id: 3,
-//         name: "Автобус Setra S 415",
-//         rating: 4.8,
-//         image: busImg,
-//         amenities: [
-//             { icon: seatIcon, text: "Мест: 53" },
-//             { icon: seatBeltIcon, text: "Ремни безопасности" },
-//             { icon: flashIcon, text: "Розетки" },
-//             { icon: airConIcon, text: "Кондиционер" },
-//             { icon: karaokeIcon, text: "Микрофон" },
-//             { icon: wcIcon, text: "Туалет" },
-//         ],
-//         price: "1800 ₽",
-//     },
-//     {
-//         id: 4,
-//         name: "Автобус Volvo 9700",
-//         rating: 4.6,
-//         image: busImg,
-//         amenities: [
-//             { icon: seatIcon, text: "Мест: 53" },
-//             { icon: seatBeltIcon, text: "Ремни безопасности" },
-//             { icon: flashIcon, text: "Розетки" },
-//             { icon: airConIcon, text: "Кондиционер" },
-//             { icon: karaokeIcon, text: "Микрофон" },
-//             { icon: wcIcon, text: "Туалет" },
-//         ],
-//         image: busImg,
-//     },
-// ];
-
 export const BUS_CATEGORIES = [
     {
         id: 1,
@@ -92,7 +29,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1500 ₽",
+                price: "1500 ₽/час",
             },
             {
                 id: 2,
@@ -107,7 +44,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1200 ₽",
+                price: "1200 ₽/час",
             },
             {
                 id: 3,
@@ -122,7 +59,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1800 ₽",
+                price: "1800 ₽/час",
             },
             {
                 id: 4,
@@ -137,7 +74,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1900 ₽",
+                price: "1900 ₽/час",
             },
             {
                 id: 5,
@@ -152,7 +89,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1500 ₽",
+                price: "1500 ₽/час",
             },
             {
                 id: 6,
@@ -167,7 +104,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1200 ₽",
+                price: "1200 ₽/час",
             },
             {
                 id: 7,
@@ -182,7 +119,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1800 ₽",
+                price: "1800 ₽/час",
             },
             {
                 id: 8,
@@ -197,7 +134,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "2100 ₽",
+                price: "2100 ₽/час",
             },
         ],
     },
@@ -218,7 +155,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1200 ₽",
+                price: "1200 ₽/час",
             },
             {
                 id: 2,
@@ -233,7 +170,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1200 ₽",
+                price: "1200 ₽/час",
             },
             {
                 id: 3,
@@ -248,7 +185,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1800 ₽",
+                price: "1800 ₽/час",
             },
             {
                 id: 4,
@@ -263,7 +200,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "3100 ₽",
+                price: "3100 ₽/час",
             },
             {
                 id: 5,
@@ -278,7 +215,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1500 ₽",
+                price: "1500 ₽/час",
             },
             {
                 id: 6,
@@ -293,7 +230,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1200 ₽",
+                price: "1200 ₽/час",
             },
             {
                 id: 7,
@@ -308,7 +245,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1800 ₽",
+                price: "1800 ₽/час",
             },
             {
                 id: 8,
@@ -323,7 +260,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "2100 ₽",
+                price: "2100 ₽/час",
             },
         ],
     },
@@ -344,7 +281,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1800 ₽",
+                price: "1800 ₽/час",
             },
             {
                 id: 2,
@@ -359,7 +296,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1200 ₽",
+                price: "1200 ₽/час",
             },
             {
                 id: 3,
@@ -374,7 +311,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1800 ₽",
+                price: "1800 ₽/час",
             },
             {
                 id: 4,
@@ -389,7 +326,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "2900 ₽",
+                price: "2900 ₽/час",
             },
             {
                 id: 5,
@@ -404,7 +341,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1500 ₽",
+                price: "1500 ₽/час",
             },
             {
                 id: 6,
@@ -419,7 +356,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1200 ₽",
+                price: "1200 ₽/час",
             },
             {
                 id: 7,
@@ -434,7 +371,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1800 ₽",
+                price: "1800 ₽/час",
             },
             {
                 id: 8,
@@ -449,7 +386,7 @@ export const BUS_CATEGORIES = [
                     { icon: karaokeIcon, text: "Микрофон" },
                     { icon: wcIcon, text: "Туалет" },
                 ],
-                price: "1900 ₽",
+                price: "1900 ₽/час",
             },
         ],
     },
