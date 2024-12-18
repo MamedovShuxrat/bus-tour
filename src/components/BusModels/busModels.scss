@@ -1,0 +1,35 @@
+.filter-sidebar {
+    margin-top: 16px;
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .filter-item {
+        margin-bottom: 8px;
+
+        label {
+            display: block;
+            cursor: pointer;
+            font-size: 16px;
+
+            input {
+                margin-right: 8px;
+            }
+        }
+
+        .model-list {
+            margin-left: 20px;
+            margin-top: 5px;
+
+            .model-item {
+                margin-bottom: 5px;
+
+                label {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

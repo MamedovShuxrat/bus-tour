@@ -22,7 +22,7 @@ const FilterDate = () => {
     return (
         <div className="filter-date">
             <div className="container">
-                <div className="filter-date__inner">
+                <div className="filter-date__inner filter-date__inner-mt0">
 
                     <div className="filter-date__item">
                         <div className="filter-date__wrapper">

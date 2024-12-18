@@ -4,7 +4,7 @@ import WellcomePage from '../pages/WellcomePage/WellcomePage';
 import Login from '../pages/Login/Login';
 import MainPage from '../pages/MainPage/MainPage';
 import PartnersPage from '../pages/PartnersPage/PartnersPage';
-import NotificationsPage from '../pages/NotificationsPage/NotificationsPage';
+import SearchPage from '../pages/SearchPage/SearchPage';
 
 
 const Routers = () => {
@@ -14,7 +14,7 @@ const Routers = () => {
             <Route path='/login' element={<Login />} />
             <Route path='/main' element={<MainPage />} />
             <Route path='/partners' element={<PartnersPage />} />
-            <Route path='/notifications' element={<NotificationsPage />} />
+            <Route path='/search' element={<SearchPage />} />
             <Route path='*' element={<Navigate to='/' />} />
         </Routes>
     );

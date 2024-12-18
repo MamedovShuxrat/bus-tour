@@ -78,8 +78,8 @@ const MainPage = () => {
                 </div>
             </div>
             <Faq />
-            <Numbers />
             <Excursions />
+            <Numbers />
             <Footer />
         </main>
     </>
