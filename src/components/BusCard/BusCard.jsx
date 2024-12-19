@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import starIcon from '../../assets/icons/bus-card/star.svg'
 import favoriteIcon from '../../assets/icons/bus-card/bookmark.svg'
 import favoriteActiveIcon from '../../assets/icons/bus-card/bookmark-active.svg'
 import './busCard.scss'
 
-const BusCard = ({ bus }) => {
+const BusCard = ({ bus, className, linkTo }) => {
     const [isFavorite, setIsFavorite] = useState(true)
     const handleFavoriteToggle = () => {
         setIsFavorite(!isFavorite)
     }
     return (
-        <div className="bus-card">
+        <div className={`bus-card ${className} `} >
             <div className="bus-card__image">
                 <img src={bus.image} alt={bus.name} />
             </div>
@@ -35,10 +36,10 @@ const BusCard = ({ bus }) => {
                 </div>
                 <div className="bus-card__price">
                     <p>{bus.price}</p>
-                    <button className="bus-card__book">Забронировать</button>
+                    <Link to={linkTo} className="bus-card__book">Забронировать</Link>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

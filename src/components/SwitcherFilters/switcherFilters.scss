@@ -1,0 +1,67 @@
+.switch-group {
+    margin-top: 16px;
+    max-height: 200px;
+    height: max-content;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #999;
+    }
+}
+
+.switch-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.switch-label {
+    color: rgb(23, 23, 23);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+
+.switch-button {
+    width: 24px;
+    height: 12px;
+    border-radius: 10px;
+    background: #ccc;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.switch-button.active {
+    background: #42a1e2;
+}
+
+.switch-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 1.2px;
+    left: 2px;
+    transition: left 0.3s;
+}
+
+.switch-button.active .switch-circle {
+    left: 12px;
+}

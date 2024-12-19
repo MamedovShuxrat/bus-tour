@@ -5,6 +5,7 @@ import Login from '../pages/Login/Login';
 import MainPage from '../pages/MainPage/MainPage';
 import PartnersPage from '../pages/PartnersPage/PartnersPage';
 import SearchPage from '../pages/SearchPage/SearchPage';
+import DetailsPage from '../pages/DetailsPage/DetailsPage';
 
 
 const Routers = () => {
@@ -15,6 +16,7 @@ const Routers = () => {
             <Route path='/main' element={<MainPage />} />
             <Route path='/partners' element={<PartnersPage />} />
             <Route path='/search' element={<SearchPage />} />
+            <Route path='/details' element={<DetailsPage />} />
             <Route path='*' element={<Navigate to='/' />} />
         </Routes>
     );

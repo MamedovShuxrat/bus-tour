@@ -64,7 +64,7 @@ const MainPage = () => {
                             </h2>
                             <div className="main__list">
                                 {category.buses.slice(0, visibleCount[category.id] || 4).map(bus => (
-                                    <BusCard key={bus.id} bus={bus} />
+                                    <BusCard key={bus.id} bus={bus} linkTo='/search' />
                                 ))}
                             </div>
                             {(visibleCount[category.id] || 4) < category.buses.length && (

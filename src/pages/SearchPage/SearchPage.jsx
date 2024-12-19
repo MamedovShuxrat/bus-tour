@@ -1,18 +1,23 @@
 import React, { useState } from 'react'
 import './searchPage.scss'
-import { FILTERS } from '../../constants/busesList'
+import { SEARCH__BUSES, FILTERS } from '../../constants/busesList'
 import searchBg from '../../assets/images/search/road-1.png'
 
 import FilterDate from '../../components/FilterDate/FilterDate'
 import BusModels from '../../components/BusModels/BusModels'
+import YearFilters from '../../components/YearFilters/YearFilters'
+import SwitcherFilters from '../../components/SwitcherFilters/SwitcherFilters'
+import SortOptions from '../../components/SortOptions/SortOptions'
+import RangeSlider from '../../components/RangeSlider/RangeSlider'
+import Footer from '../../components/Footer/Footer'
+import BusCard from '../../components/BusCard/BusCard'
 
 const SearchPage = () => {
-  const [value, setValue] = useState(50);
 
-  const handleSliderChange = (e) => {
-    setValue(Number(e.target.value));
-  };
   const [activeFilterId, setActiveFilterId] = useState(null);
+  const handleFilterClick = (filterId) => {
+    setActiveFilterId(filterId);
+  };
   return (
     <div className="search">
       <div className="search__top_wrapper">
@@ -51,31 +56,7 @@ const SearchPage = () => {
             <div className="sidebar__lists">
               <div className="sidebar__list">
                 <h5 className="sidebar__title">Выберете количество мест</h5>
-                <div className="range">
-                  <div className="range__line">
-                    <div
-                      className="range__tooltip"
-                      style={{ left: `${value}%` }}
-                    >
-                      {value}
-                    </div>
-                    <div
-                      className="range__blue-line"
-                      style={{ width: `${value}%` }}
-                    ></div>
-                  </div>
-                  <input
-                    type="range"
-                    className="range__input"
-                    min="0"
-                    max="100"
-                    value={value}
-                    onChange={handleSliderChange}
-                  />
-                  <div className="range__summ">
-                    <span className="range__total_sum">{value} </span>
-                  </div>
-                </div>
+                <RangeSlider />
               </div>
               <div className="sidebar__list">
                 <h5 className="sidebar__title">Цена за час, ₽</h5>
@@ -86,28 +67,45 @@ const SearchPage = () => {
               </div>
               <div className="sidebar__list">
                 <h5 className="sidebar__title">Отсортировать</h5>
-                <ul className="sidebar__sort-wrapper">
-                  <li className='sidebar__sort-item'>По убыванию</li>
-                  <li className='sidebar__sort-item'>По возрастанию</li>
-                  <li className='sidebar__sort-item active'>По популярности</li>
-                  <li className='sidebar__sort-item'>Без сортировки</li>
-                </ul>
+                <SortOptions />
               </div>
               <div className="sidebar__list">
                 <h5 className="sidebar__title">Марка / Модель</h5>
                 <BusModels />
               </div>
               <div className="sidebar__list">
-                1
+                <h5 className="sidebar__title">Год выпуска</h5>
+                <YearFilters />
               </div>
+              <div className="sidebar__list">
+                <h5 className="sidebar__title">Дополнительно</h5>
+                <SwitcherFilters />
+              </div>
+              <div className="sidebar__list sidebar__list-btns">
+                <div className="sidebar__buttons">
+                  <button className="sidebar__btn sidebar__btn-clear">Очистить фильтры</button>
+                  <button className="sidebar__btn sidebar__btn-apply">Применить</button>
+                </div>
+              </div>
+
             </div>
           </div>
           <div className="search__lists">
+            {SEARCH__BUSES.map(category => (
+              <section className='search__buses' key={category.id}>
+                <div className="search__list">
+                  {category.buses.map(bus => (
+                    <BusCard key={bus.id} bus={bus} className='bus-card-search' linkTo='/details' />
+                  ))}
+                </div>
+
+              </section>
+            ))}
 
           </div>
         </div>
       </div>
-
+      <Footer />
     </div>
   )
 }

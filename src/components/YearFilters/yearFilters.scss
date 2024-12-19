@@ -1,4 +1,4 @@
-.filter-sidebar {
+.year-filter {
     margin-top: 16px;
     max-height: 200px;
     height: max-content;
@@ -21,34 +21,21 @@
         background: #999;
     }
 
-    h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
 
-    .filter-item {
-        margin-bottom: 8px;
+
+    &__item {
+        margin-bottom: 4px;
 
         label {
             display: block;
             cursor: pointer;
+            color: rgb(23, 23, 23);
             font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
 
             input {
                 margin-right: 8px;
-            }
-        }
-
-        .model-list {
-            margin-left: 20px;
-            margin-top: 5px;
-
-            .model-item {
-                margin-bottom: 5px;
-
-                label {
-                    font-size: 14px;
-                }
             }
         }
     }

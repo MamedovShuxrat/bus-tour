@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import { format } from 'date-fns'
@@ -71,11 +72,11 @@ const FilterDate = () => {
                             </div>
                         )}
                     </div>
-                    <div className=" filter-date__btn">
+                    <Link to='/search' className=" filter-date__btn">
                         <button >
                             Поиск
                         </button>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
