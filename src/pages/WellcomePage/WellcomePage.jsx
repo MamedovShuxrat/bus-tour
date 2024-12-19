@@ -19,7 +19,7 @@ const WellcomePage = () => {
         setIspeopleVisible(true)
         setTimeout(() => {
             navigate('/main')
-        }, 800)
+        }, 1200)
     }
     return (
         <div className='container'>

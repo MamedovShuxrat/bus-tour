@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './searchPage.scss'
 import { SEARCH__BUSES, FILTERS } from '../../constants/busesList'
-import searchBg from '../../assets/images/search/road-1.png'
+import searchBg from '../../assets/images/search/road-0.png'
 
 import FilterDate from '../../components/FilterDate/FilterDate'
 import BusModels from '../../components/BusModels/BusModels'
@@ -13,7 +14,9 @@ import Footer from '../../components/Footer/Footer'
 import BusCard from '../../components/BusCard/BusCard'
 
 const SearchPage = () => {
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   const [activeFilterId, setActiveFilterId] = useState(null);
   const handleFilterClick = (filterId) => {
     setActiveFilterId(filterId);
@@ -25,6 +28,12 @@ const SearchPage = () => {
           <div className='container'>
             <div className="search__bg-wrapper">
               <img className="search__bg" src={searchBg} alt="road" />
+              <div className="road">
+                <Link to='/search' className="road__map active">Выбор  транспорта</Link>
+                <Link to='/details' className="road__map">Детали бронирования</Link>
+                <Link to='/payment' className="road__map">Оплата</Link>
+                <Link to='/success' className="road__map">Подтверждение</Link>
+              </div>
             </div>
           </div>
           <div className="filter">

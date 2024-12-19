@@ -1,0 +1,84 @@
+.forms {
+    &__title {
+        color: rgb(23, 23, 23);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+
+    }
+
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        width: 70%;
+        gap: 36px;
+    }
+
+    &__fields {
+        width: calc(50% - 36px);
+        display: flex;
+        flex-direction: column;
+
+        &-width {
+            width: 100%;
+        }
+
+        span {
+            color: rgb(98, 98, 98);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+            margin-bottom: 7px;
+        }
+
+        input {
+            padding: 17px 19px;
+            border: 2px solid rgb(220, 220, 220);
+            border-radius: 16px;
+
+            background: rgb(255, 255, 255);
+            color: rgb(23, 23, 23);
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        textarea {
+            border: 2px solid rgb(220, 220, 220);
+            border-radius: 16px;
+            background: rgb(255, 255, 255);
+            resize: none;
+            overflow: auto;
+            padding: 17px 19px;
+            height: 183px;
+            width: 100%;
+        }
+    }
+
+    &__actions {
+        width: 30%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__btn {
+        margin-top: auto;
+        padding: 20px 32px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        border-radius: 12px;
+        text-align: center;
+
+        background: rgb(255, 94, 86);
+    }
+}

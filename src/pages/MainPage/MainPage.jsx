@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Footer from '../../components/Footer/Footer'
 import './mainPage.scss'
 import FilterDate from '../../components/FilterDate/FilterDate'
@@ -14,6 +14,9 @@ import { BUS_CATEGORIES, FILTERS } from '../../constants/busesList'
 
 
 const MainPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     const [activeFilterId, setActiveFilterId] = useState(null);
     const [visibleCount, setVisibleCount] = useState({})
 

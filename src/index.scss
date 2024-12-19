@@ -54,3 +54,24 @@ body {
   margin: 0 auto;
 
 }
+
+.road {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+
+  &__map {
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: center;
+
+    &.active {
+      color: rgb(11, 11, 11);
+      font-weight: 700;
+
+    }
+  }
+}

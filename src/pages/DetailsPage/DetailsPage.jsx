@@ -1,12 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './detailsPage.scss'
-import searchBg from '../../assets/images/search/road-2.png'
+import searchBg from '../../assets/images/search/road-1.png'
 import { DETAILS__BUS } from '../../constants/busesList'
 import BusCardDetails from '../../components/BusCardDetails/BusCardDetails'
 import Footer from '../../components/Footer/Footer'
+import OrderingBus from '../../components/OrderingBus/OrderingBus'
+import Reviews from '../../components/Reviews/Reviews'
 
 const DetailsPage = () => {
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <div className="search">
       <div className="search__top_wrapper">
@@ -14,6 +19,12 @@ const DetailsPage = () => {
           <div className='container'>
             <div className="search__bg-wrapper">
               <img className="search__bg" src={searchBg} alt="road" />
+              <div className="road">
+                <Link to='/search' className="road__map ">Выбор  транспорта</Link>
+                <Link to='/details' className="road__map active">Детали бронирования</Link>
+                <Link to='/payment' className="road__map">Оплата</Link>
+                <Link to='/success' className="road__map">Подтверждение</Link>
+              </div>
             </div>
           </div>
         </div>
@@ -56,6 +67,12 @@ const DetailsPage = () => {
                   <p>18 000 ₽</p>
                 </div>
               </div>
+            </div>
+            <div className="details__ordering">
+              <OrderingBus />
+            </div>
+            <div className="details__reviews">
+              <Reviews />
             </div>
           </div>
         </div>

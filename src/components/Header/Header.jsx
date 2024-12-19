@@ -21,7 +21,7 @@ const Header = () => {
         <div className="container  container-position">
             <header className='header'>
                 <nav className='nav'>
-                    <Link to="/">
+                    <Link to="/main">
                         <img width={69} height={42} src={logo} alt="logo" />
                     </Link>
                     <div className="nav__lists">

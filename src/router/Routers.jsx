@@ -6,6 +6,8 @@ import MainPage from '../pages/MainPage/MainPage';
 import PartnersPage from '../pages/PartnersPage/PartnersPage';
 import SearchPage from '../pages/SearchPage/SearchPage';
 import DetailsPage from '../pages/DetailsPage/DetailsPage';
+import PaymentPage from '../pages/PaymentPage/PaymentPage';
+import SuccesPage from '../pages/SuccessPage/SuccesPage';
 
 
 const Routers = () => {
@@ -17,6 +19,8 @@ const Routers = () => {
             <Route path='/partners' element={<PartnersPage />} />
             <Route path='/search' element={<SearchPage />} />
             <Route path='/details' element={<DetailsPage />} />
+            <Route path='/payment' element={<PaymentPage />} />
+            <Route path='/success' element={<SuccesPage />} />
             <Route path='*' element={<Navigate to='/' />} />
         </Routes>
     );
