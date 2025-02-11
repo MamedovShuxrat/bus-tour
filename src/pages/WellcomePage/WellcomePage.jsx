@@ -22,21 +22,23 @@ const WellcomePage = () => {
         }, 1200)
     }
     return (
-        <div className='container'>
-            <div className="wellcome">
-                <div className="wellcome__content">
-                    <div className={titleClass}>
-                        <div className="word">Быстро</div>
-                        <div className="word">Удобно</div>
-                        <div className="word">Стабильно</div>
+        <div className="wellcome">
+            <div className='container'>
+                <div className="wellcome__inner">
+                    <div className="wellcome__content">
+                        <div className={titleClass}>
+                            <div className="word">Быстро</div>
+                            <div className="word">Удобно</div>
+                            <div className="word">Стабильно</div>
+                        </div>
                     </div>
-                </div>
-                <div className="wellcome__visual">
-                    {isPeopleVisible && <img src={peopleImg} alt="people" className='wellcome__people' />}
-                    <img src={busImg} alt="bus" className={imgClass} />
-                    <a className="wellcome__btn" onClick={handleClickGo}>
-                        Поехали!
-                    </a>
+                    <div className="wellcome__visual">
+                        {isPeopleVisible && <img src={peopleImg} alt="people" className='wellcome__people' />}
+                        <img src={busImg} alt="bus" className={imgClass} />
+                        <a className="wellcome__btn" onClick={handleClickGo}>
+                            Поехали!
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

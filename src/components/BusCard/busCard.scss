@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .bus-card {
     border-radius: 17px;
     background: rgb(255, 255, 255);
@@ -8,7 +10,7 @@
 
     h3 {
         color: rgb(23, 23, 23);
-        font-size: 18px;
+        @include fsz18;
         font-weight: 500;
         line-height: 22px;
     }
@@ -108,5 +110,13 @@
         font-weight: 600;
         line-height: 17px;
         text-align: center;
+    }
+}
+
+@media (max-width:990px) {
+
+    .bus-card {
+        width: calc(100% - 10px);
+        padding: 20px 25px;
     }
 }

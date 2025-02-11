@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .partner-page {
 
     background: #f9f9f9;
@@ -40,7 +42,7 @@
     }
 
     &__description {
-        font-size: 18px;
+        @include fsz18;
         margin-bottom: 30px;
         color: #555;
     }

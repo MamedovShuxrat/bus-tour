@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .filter-sidebar {
     margin-top: 16px;
     max-height: 200px;
@@ -22,7 +24,7 @@
     }
 
     h3 {
-        font-size: 18px;
+        @include fsz18;
         margin-bottom: 10px;
     }
 

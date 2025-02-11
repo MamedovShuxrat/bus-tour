@@ -43,7 +43,7 @@ button {
 
 body {
   font-family: $main-fonts;
-  font-size: 18px;
+  @include fsz18;
   color: $main-dark;
   line-height: 22px;
 }

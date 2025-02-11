@@ -1,7 +1,9 @@
+@import '../../assets/styles/variables.scss';
+
 .reviews {
     &__title {
         color: rgb(23, 23, 23);
-        font-size: 20px;
+        @include fsz20;
         font-weight: 600;
         line-height: 24px;
         margin-bottom: 20px;
@@ -135,7 +137,7 @@
 }
 
 .star {
-    font-size: 20px;
+    @include fsz20;
     color: #ccc;
 }
 

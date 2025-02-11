@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .success {
     display: flex;
     justify-content: center;
@@ -42,7 +44,7 @@
 
     &__title {
         color: rgb(23, 23, 23);
-        font-size: 20px;
+        @include fsz20;
         font-weight: 700;
         line-height: 24px;
         margin-bottom: 45px;
@@ -51,7 +53,7 @@
 
     &__name {
         color: rgb(23, 23, 23);
-        font-size: 18px;
+        @include fsz18;
         font-weight: 400;
         line-height: 30px;
         text-align: center;

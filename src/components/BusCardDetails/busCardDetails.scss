@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .bus {
     border-radius: 17px;
     background: rgb(255, 255, 255);
@@ -8,7 +10,7 @@
 
     h3 {
         color: rgb(23, 23, 23);
-        font-size: 20px;
+        @include fsz20;
         font-weight: 500;
         line-height: 22px;
     }
@@ -129,7 +131,7 @@
     &__book {
         padding: 7px 8px;
         color: rgb(255, 94, 86);
-        font-size: 20px;
+        @include fsz20;
         font-weight: 600;
         line-height: 36px;
         text-align: center;

@@ -157,3 +157,37 @@
     display: flex;
     gap: 20px;
 }
+
+
+@media (max-width:990px) {
+
+    .cards__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width:575px) {
+
+    .cards__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(100% - 20px);
+        display: flex;
+
+        &__visual {
+            width: 40%;
+            flex: 1;
+        }
+
+        &__content {
+            width: 60%;
+        }
+    }
+}

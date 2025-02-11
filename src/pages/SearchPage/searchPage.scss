@@ -4,7 +4,7 @@
     background: rgb(66, 161, 226);
 
     &__inner {
-        padding: 15px 100px;
+        @include sectionPadding;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -28,7 +28,7 @@
     &__name {
         color: rgb(255, 255, 255);
         font-family: $main-fonts;
-        font-size: 20px;
+        @include fsz20;
         font-weight: 500;
         line-height: 24px;
         text-align: center;
@@ -103,7 +103,7 @@
     &__title {
         color: rgb(23, 23, 23);
         font-family: $main-fonts;
-        font-size: 18px;
+        @include fsz18;
         font-weight: 300;
         line-height: 22px;
         text-align: center;
@@ -169,4 +169,17 @@
         }
     }
 
+}
+
+@media (max-width:7680px) {
+    .filter {
+        &__item {
+            gap: 7px;
+
+            img {
+                width: 40px;
+                height: 20px;
+            }
+        }
+    }
 }

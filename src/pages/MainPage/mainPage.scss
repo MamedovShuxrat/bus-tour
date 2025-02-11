@@ -10,12 +10,12 @@
     }
 
     &__buses {
-        padding: 20px 100px;
+        @include sectionPadding;
     }
 
     &__title {
         color: rgb(23, 23, 23);
-        font-size: 22px;
+        @include fsz22;
         font-weight: 400;
         line-height: 27px;
         margin: 0 0 16px 20px;
@@ -45,7 +45,7 @@
     background: rgb(66, 161, 226);
 
     &__inner {
-        padding: 15px 100px;
+        @include sectionPadding;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -69,9 +69,23 @@
     &__name {
         color: rgb(255, 255, 255);
         font-family: $main-fonts;
-        font-size: 20px;
+        @include fsz20;
         font-weight: 500;
         line-height: 24px;
         text-align: center;
+    }
+}
+
+@media (max-width:990px) {
+    .main {
+        &__top_wrapper {
+            padding: 25px 0 18px;
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .main {
+        padding-top: 55px;
     }
 }

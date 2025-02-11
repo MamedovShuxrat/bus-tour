@@ -1,7 +1,9 @@
+@import '../../assets/styles/variables.scss';
+
 .forms {
     &__title {
         color: rgb(23, 23, 23);
-        font-size: 20px;
+        @include fsz20;
         font-weight: 600;
         line-height: 28px;
     }
@@ -32,7 +34,7 @@
 
         span {
             color: rgb(98, 98, 98);
-            font-size: 18px;
+            @include fsz18;
             font-weight: 700;
             line-height: 22px;
             margin-bottom: 7px;
@@ -45,7 +47,7 @@
 
             background: rgb(255, 255, 255);
             color: rgb(23, 23, 23);
-            font-size: 20px;
+            @include fsz20;
             font-weight: 500;
             line-height: 24px;
         }
@@ -73,7 +75,7 @@
         margin-top: auto;
         padding: 20px 32px;
         color: rgb(255, 255, 255);
-        font-size: 20px;
+        @include fsz20;
         font-weight: 600;
         line-height: 24px;
         border-radius: 12px;

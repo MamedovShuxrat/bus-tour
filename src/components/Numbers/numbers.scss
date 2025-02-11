@@ -4,7 +4,7 @@
     background: rgb(222, 241, 250);
 
     &__inner {
-        padding: 36px 100px 64px;
+        @include sectionPadding;
     }
 
     &__title {
@@ -12,7 +12,7 @@
         margin-bottom: 32px;
         color: rgb(23, 23, 23);
         font-family: $main-fonts;
-        font-size: 36px;
+        font-size: clamp(20px, 4vw, 36px);
         font-weight: 700;
         line-height: 44px;
     }
@@ -41,10 +41,10 @@
 
             &::after {
                 position: absolute;
-                top: -30px;
-                right: 30px;
+                top: -50px;
+                right: 10px;
                 content: '';
-                width: 357px;
+                width: 95%;
                 height: 100%;
                 background: url('../../assets/images/numbers/map.png') center/contain no-repeat;
             }
@@ -78,7 +78,7 @@
         p {
             color: rgb(23, 23, 23);
             font-family: $main-fonts;
-            font-size: 72px;
+            font-size: clamp(22px, 4vw, 72px);
             font-weight: 500;
             line-height: 87px;
         }
@@ -86,9 +86,54 @@
         span {
             color: rgb(98, 98, 98);
             font-family: $main-fonts;
-            font-size: 18px;
+            @include fsz18;
             font-weight: 500;
             line-height: 20px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .numbers {
+
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        &__card {
+
+
+            &-1 {
+                grid-row: span 2 / span 2;
+                grid-column-start: 1;
+                grid-row-start: 3;
+            }
+
+            &-2 {
+                grid-column: span 2 / span 2;
+                grid-row: span 2 / span 2;
+                grid-column-start: 1;
+                grid-row-start: 1;
+
+                &::after {
+                    top: -10px;
+                }
+            }
+
+            &-3 {
+                grid-row-start: 3;
+                grid-column-start: 2;
+            }
+
+            &-4 {
+                grid-column-start: 2;
+                grid-row-start: 4;
+
+
+            }
+
         }
     }
 }

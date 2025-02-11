@@ -15,7 +15,7 @@ const Footer = () => {
 					<div className="footer__wrapper">
 						<div className="footer__item">
 							<Link to="/">
-								<img width={97} height={59} src={logo} alt="logo" />
+								<img className='footer__logo' width={97} height={59} src={logo} alt="logo" />
 							</Link>
 							<p className="footer__slogan">Быстро, удобно, стабильно</p>
 							<div className="footer__contacts">

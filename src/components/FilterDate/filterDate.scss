@@ -45,7 +45,7 @@
     &__select {
         color: rgb(23, 23, 23);
         font-family: $main-fonts;
-        font-size: 18px;
+        @include fsz18;
         font-weight: 500;
         line-height: 22px;
     }
@@ -74,7 +74,7 @@
 
     &__btn {
         color: rgb(255, 255, 255);
-        font-size: 20px;
+        @include fsz20;
         font-weight: 700;
         line-height: 24px;
         letter-spacing: 0%;
@@ -90,5 +90,22 @@
         justify-content: center;
         width: 375px;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 990px) {
+    .filter-date {
+        &__inner {
+            padding: 0 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-date {
+        &__inner {
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
     }
 }
