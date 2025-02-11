@@ -109,6 +109,10 @@
             gap: 10px;
             justify-content: center;
         }
+
+        &__link {
+            text-align: center;
+        }
     }
 }
 
@@ -120,6 +124,7 @@
             margin-bottom: 10px;
 
         }
+
 
         &__logo {
             width: 60px;
