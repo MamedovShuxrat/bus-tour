@@ -126,7 +126,7 @@
 
     &__price {
         color: rgb(255, 94, 86);
-        font-size: 15px;
+        @include fsz14;
         font-weight: 700;
         line-height: 19.64px;
     }

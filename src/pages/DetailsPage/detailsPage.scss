@@ -1,24 +1,9 @@
 @import '../../assets/styles/variables.scss';
 
-.search {
-    background: rgb(246, 246, 249);
-    padding-top: 75px;
-
-    &__bg {
-        &-wrapper {
-            padding: 44px 102px 36px;
-        }
-
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-}
 
 .details {
     &__inner {
-        padding: 0px 100px;
+        @include sectionPadding;
     }
 
     &__options {
@@ -86,7 +71,7 @@
 
         p {
             color: rgb(23, 23, 23);
-            font-size: 32px;
+            @include fsz25;
             font-weight: 600;
             line-height: 28px;
         }
@@ -106,5 +91,65 @@
 
         background: rgb(255, 255, 255);
         margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 990px) {
+    .details {
+
+        &__options {
+            flex-wrap: wrap;
+        }
+
+        &__card,
+        &__order {
+            width: 100%;
+        }
+
+        &__order-wrapper {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__price {
+            margin: auto auto;
+        }
+
+        &__order {
+            h3 {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__wrapper {
+            margin-bottom: 10px;
+            width: calc(50% - 20px);
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .details {
+        &__reviews {
+            padding: 20px;
+        }
+
+        &__order {
+            padding: 20px;
+
+            h3 {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__ordering {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+
     }
 }

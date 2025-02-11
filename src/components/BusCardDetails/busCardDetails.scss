@@ -140,3 +140,35 @@
         width: 288px;
     }
 }
+
+@media(max-width:990px) {
+    .bus {
+        padding: 20px;
+    }
+}
+
+@media(max-width:575px) {
+    .bus {
+        gap: 20px;
+
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+
+        }
+
+        &__details {
+            width: 80%;
+        }
+
+        &__book {
+            width: auto;
+        }
+
+        &__rating-wrapper {
+            padding: 7px 8px;
+        }
+    }
+}

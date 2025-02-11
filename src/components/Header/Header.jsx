@@ -22,7 +22,7 @@ const Header = () => {
             <header className='header'>
                 <nav className='nav'>
                     <Link to="/main">
-                        <img width={69} height={42} src={logo} alt="logo" />
+                        <img className='nav__logo' width={69} height={42} src={logo} alt="logo" />
                     </Link>
                     <div className="nav__lists">
                         <div className="nav__link nav__link-notification">

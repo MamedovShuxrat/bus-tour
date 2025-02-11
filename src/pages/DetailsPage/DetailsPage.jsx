@@ -46,25 +46,27 @@ const DetailsPage = () => {
               </div>
               <div className="details__order">
                 <h3>Детали заказа</h3>
-                <div className="details__wrapper">
-                  <span  >Получение</span>
-                  <p>26 декабря в 8:00</p>
-                </div>
-                <div className="details__wrapper">
-                  <span>Возврат</span>
-                  <p>26 декабря в 16:00</p>
-                </div>
-                <div className="details__wrapper">
-                  <span  >Телефон компании для связи</span>
-                  <p>8 966 666 66 66</p>
-                </div>
-                <div className="details__wrapper">
-                  <span>Количество часов аренды </span>
-                  <p>8 ч.</p>
-                </div>
-                <div className="details__price">
-                  <span>Стоимость:</span>
-                  <p>18 000 ₽</p>
+                <div className="details__order-wrapper">
+                  <div className="details__wrapper">
+                    <span  >Получение</span>
+                    <p>26 декабря в 8:00</p>
+                  </div>
+                  <div className="details__wrapper">
+                    <span>Возврат</span>
+                    <p>26 декабря в 16:00</p>
+                  </div>
+                  <div className="details__wrapper">
+                    <span  >Телефон компании для связи</span>
+                    <p>8 966 666 66 66</p>
+                  </div>
+                  <div className="details__wrapper">
+                    <span>Количество часов аренды </span>
+                    <p>8 ч.</p>
+                  </div>
+                  <div className="details__price">
+                    <span>Стоимость:</span>
+                    <p>18 000 ₽</p>
+                  </div>
                 </div>
               </div>
             </div>

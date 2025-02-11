@@ -60,10 +60,11 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  gap: 3px;
 
   &__map {
     color: rgb(98, 98, 98);
-    font-size: 14px;
+    font-size: clamp(10px, 2vw, 14px);
     font-weight: 600;
     line-height: 17px;
     text-align: center;

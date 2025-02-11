@@ -144,3 +144,38 @@
 .star.filled {
     color: gold;
 }
+
+@media (max-width: 768px) {
+    .reviews-container {
+        .reviews {
+            &__lists {
+                gap: 10px;
+            }
+        }
+
+        .review {
+            &__top {
+                flex-wrap: wrap;
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 575px) {
+    .reviews-container {
+
+
+        .review {
+            &__top {
+                flex-wrap: wrap;
+            }
+
+            &__card {
+                min-width: 50%;
+            }
+        }
+
+    }
+}

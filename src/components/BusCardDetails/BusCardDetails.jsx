@@ -13,7 +13,7 @@ const BusCardDetails = ({ bus, className, linkTo }) => {
     return (
         <div className={`bus  ${className} `} >
             <div className="bus__wrapper">
-                <div>
+                <div  >
                     <div className="bus__image">
                         <img src={bus.image} alt={bus.name} />
                     </div>

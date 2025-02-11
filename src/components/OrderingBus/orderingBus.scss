@@ -47,7 +47,7 @@
 
             background: rgb(255, 255, 255);
             color: rgb(23, 23, 23);
-            @include fsz20;
+            @include fsz18;
             font-weight: 500;
             line-height: 24px;
         }
@@ -82,5 +82,76 @@
         text-align: center;
 
         background: rgb(255, 94, 86);
+    }
+}
+
+@media (max-width: 768px) {
+    .forms {
+        &__btn {
+            padding: 10px;
+        }
+
+        &__inputs {
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        &__actions {
+            margin-top: 20px;
+        }
+
+        &__fields {
+            width: calc(50% - 15px);
+
+            &-width {
+                width: 100%;
+            }
+
+            textarea {
+                height: 150px;
+                padding: 7px 9px;
+            }
+
+            span {
+                margin-bottom: 4px;
+            }
+
+            input {
+                padding: 7px 9px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .forms {
+        &__wrapper {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        &__actions {
+            width: 100%;
+        }
+
+        &__inputs {
+            width: 100%;
+        }
+
+        &__fields {
+            width: calc(50% - 15px);
+
+            &-width {
+                width: 100%;
+            }
+
+            textarea {
+                height: 110px;
+                padding: 7px 9px;
+                margin-bottom: 10px;
+            }
+
+
+        }
     }
 }

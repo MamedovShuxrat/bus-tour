@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .switch-group {
     margin-top: 16px;
     max-height: 200px;
@@ -32,7 +34,7 @@
 
 .switch-label {
     color: rgb(23, 23, 23);
-    font-size: 16px;
+    @include fsz16;
     font-weight: 300;
     line-height: 19px;
 }
